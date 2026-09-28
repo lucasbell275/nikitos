@@ -1,0 +1,44 @@
+@keyframes nikitos-rise {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 18px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes nikitos-fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+html.motion-enabled .motion-pending {
+    opacity: 0;
+}
+
+html.motion-enabled .motion-enter-rise {
+    animation: nikitos-rise 620ms cubic-bezier(0.22, 1, 0.36, 1) var(--motion-delay, 0ms) backwards;
+}
+
+html.motion-enabled .motion-enter-fade {
+    animation: nikitos-fade 700ms ease-out var(--motion-delay, 0ms) backwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html.motion-enabled .motion-pending {
+        opacity: 1;
+    }
+
+    html.motion-enabled .motion-enter-rise,
+    html.motion-enabled .motion-enter-fade {
+        animation: none;
+    }
+}
