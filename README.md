@@ -12,12 +12,12 @@ Php artisan key:generate
 Vincular public con storage
 Php artisan storage:link
 
-Instalar dependencias JS
+Instalar dependencias JS:
 npm install
 npm run build
 
-Instalar las dependencias de PHP ejecutando composer install en la terminal.
-
+Instalar las dependencias de PHP ejecutando en la terminal:  
+composer install
 
 
 Antes de arrancar el servidor local y tratar de visualizar el proyecto, es importante correr las respectivas migraciones con sus seeders. Para hacer esto, se usa php artisan migrate:fresh --seed
@@ -25,4 +25,4 @@ Cuando se corre los seeders, se proveen imagenes desde el storage.
 Para levantar el servidor local, pones en la terminal de tu editor de codigo el comando "php artisan serve"
 
 Para acceder admin se usa /login/admin. Usuario: lucas@gmail.com contraseña: lucas123
-Para acceder a la vista de zona privada usuario: cliente contraseña cliente123
+Para acceder a la vista de zona privada usuario: cliente contraseña: cliente123
