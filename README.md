@@ -24,5 +24,7 @@ Antes de arrancar el servidor local y tratar de visualizar el proyecto, es impor
 Cuando se corre los seeders, se proveen imagenes desde el storage.
 Para levantar el servidor local, pones en la terminal de tu editor de codigo el comando "php artisan serve"
 
-Para acceder admin se usa /login/admin. Usuario: lucas@gmail.com contraseña: lucas123
-Para acceder a la vista de zona privada usuario: cliente contraseña cliente123
+Para acceder admin se usa /login/admin.
+Usuario: lucas@gmail.com Contraseña: lucas123
+Para acceder a la vista de zona privada
+Usuario: cliente Contraseña: cliente123
